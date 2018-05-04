@@ -1,6 +1,11 @@
 # eggjs for Docker
 [Dockerfile](https://hub.docker.com/r/daijie/eggjs/~/dockerfile/) for eggjs
 
+### Versions
+- daijie/eggjs:latest
+    node9
+- daijie/eggjs:alinode-alpine
+    alinode3
 
 ## Quick Start
 To create a project in current directory
