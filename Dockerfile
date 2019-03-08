@@ -4,8 +4,10 @@ RUN apk --update add tzdata \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && apk del tzdata \
-    && apk add fftw-dev gcc g++ make libc6-compat --repository https://mirrors.aliyun.com/alpine/v3.7/main \
-    && apk add vips-dev --update-cache --repository https://mirrors.aliyun.com/alpine/edge/testing
+    && apk add gcc g++ make libc6-compat \
+    && apk add vips-dev fftw-dev build-base --no-cache
+        --repository https://dl-3.alpinelinux.org/alpine/edge/testing \
+        --repository https://dl-3.alpinelinux.org/alpine/edge/main
 
 RUN mkdir -p /usr/src/app
 RUN npm i egg-init -g
