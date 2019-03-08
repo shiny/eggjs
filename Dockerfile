@@ -10,6 +10,7 @@ RUN apk --update add tzdata \
         --repository http://dl-3.alpinelinux.org/alpine/edge/main
 
 RUN mkdir -p /usr/src/app
+RUN npm config set unsafe-perm true
 RUN npm i egg-init -g
 WORKDIR /usr/src/app
 EXPOSE 7001
