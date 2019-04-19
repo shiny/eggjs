@@ -4,7 +4,7 @@ RUN apk --update add tzdata \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && apk del tzdata \
-    && apk add gcc g++ make libc6-compat \
+    && apk add gcc g++ make libc6-compat python \
     && apk add vips-dev fftw-dev build-base --no-cache \
         --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
         --repository http://dl-3.alpinelinux.org/alpine/edge/main
