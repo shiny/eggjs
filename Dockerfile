@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/aliyun-node/alinode:5-alpine
+FROM registry.cn-hangzhou.aliyuncs.com/aliyun-node/alinode:5.13.0-alpine
 
 RUN apk --update add tzdata \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
