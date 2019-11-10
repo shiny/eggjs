@@ -6,7 +6,7 @@ RUN apk --update add tzdata \
     && apk del tzdata \
     && apk add gcc g++ make libc6-compat python \
     && apk add vips-dev fftw-dev build-base --no-cache \
-        --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+        --repository http://dl-3.alpinelinux.org/alpine/edge/community \
         --repository http://dl-3.alpinelinux.org/alpine/edge/main
 
 RUN mkdir -p /usr/src/app
