@@ -8,6 +8,8 @@
     alinode3, node 8
 - daijie/eggjs:alinode-4-alpine
     alinode4, node 10
+- daijie/eggjs:alinode-5-alpine
+    alinode5, node 12
 
 ## Quick Start
 To create a project in current directory
